@@ -76,4 +76,11 @@ window.addEventListener('scroll', () => {
   lastScrollTop = scrollTop;
 });
 
+// Function to download the PDF
+function downloadPDF() {
+  const link = document.createElement('a');
+  link.href = 'David-Borromeo-Resume.pdf';
+  link.download = 'David-Borromeo-Resume.pdf';
+  link.click();
+}
 
