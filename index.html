@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <a href="#hero" id="logo"><h1 class="logo">David Borromeo</h1></a>
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <a href="#about" class="nav-button"> 
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.86314 6.65983C6.86314 5.42397 7.35167 4.23872 8.22125 3.36483C9.09083 2.49094 10.2702 2 11.5 2C12.7298 2 13.9092 2.49094 14.7788 3.36483C15.6483 4.23872 16.1369 5.42397 16.1369 6.65983C16.1369 7.89569 15.6483 9.08094 14.7788 9.95482C13.9092 10.8287 12.7298 11.3197 11.5 11.3197C10.2702 11.3197 9.09083 10.8287 8.22125 9.95482C7.35167 9.08094 6.86314 7.89569 6.86314 6.65983ZM3.00012 21.2658C3.00012 21.2658 2.95536 15.9997 4.54562 14.4262C6.13588 12.8528 9.26834 12.8558 11.5 12.8558C13.7317 12.8558 16.8659 12.8528 18.4562 14.4262C20.0464 15.9997 19.9999 21.2658 19.9999 21.2658C20.0026 21.4168 19.9614 21.5652 19.8814 21.6931C19.8014 21.8209 19.6861 21.9225 19.5496 21.9855C19.4831 22.0162 14.2782 21.9893 11.5 21.9855C8.62926 21.9855 3.45041 21.9855 3.45041 21.9855C3.31387 21.9225 3.19856 21.8209 3.11858 21.6931C3.03861 21.5652 2.99744 21.4168 3.00012 21.2658Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project" class="nav-button">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 20 20"><title/><g fill-rule="evenodd" id="Icons" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><g id="Group" stroke-width="2" transform="translate(-2.000000, -2.000000)"><g id="Shape"><path d="M4.8,21 C3.80588745,21 3,20.1685288 3,19.1428571 L3,9.85714286 C3,8.83147118 3.80588745,8 4.8,8 L19.2,8 C20.1941125,8 21,8.83147118 21,9.85714286 L21,19.1428571 C21,20.1685288 20.1941125,21 19.2,21 L4.8,21 Z"/><path d="M17,8 L7,8 C7,5.45230769 8.40666667,3 12,3 C15.5933333,3 17,5.45230769 17,8 Z" fill="none"/></g></g></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-button">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M21.75 6.75C21.75 15.034 15.034 21.75 6.75 21.75H4.5C3.90326 21.75 3.33097 21.5129 2.90901 21.091C2.48705 20.669 2.25 20.0967 2.25 19.5V18.128C2.25 17.612 2.601 17.162 3.102 17.037L7.525 15.931C7.965 15.821 8.427 15.986 8.698 16.348L9.668 17.641C9.95 18.017 10.437 18.183 10.878 18.021C12.5151 17.4191 14.0018 16.4686 15.2352 15.2352C16.4686 14.0018 17.4191 12.5151 18.021 10.878C18.183 10.437 18.017 9.95 17.641 9.668L16.348 8.698C15.985 8.427 15.821 7.964 15.931 7.525L17.037 3.102C17.0979 2.85869 17.2383 2.6427 17.4359 2.48834C17.6336 2.33397 17.8772 2.25008 18.128 2.25H19.5C20.0967 2.25 20.669 2.48705 21.091 2.90901C21.5129 3.33097 21.75 3.90326 21.75 4.5V6.75Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </a>
+                </li> 
+            </ul>
+        </nav>
+        <button class="menu-button" id="menu-button">
+            <!-- Hamburger Icon -->
+            <svg class="icon open-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          
+            <!-- Close Icon -->
+            <svg class="icon close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+              <path d="M6 18L18 6M6 6l12 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button> 
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Human Creativity<br> is <span>Irreplaceable</span></h2>
+        </section>
+        <section id="about">
+            <div class="container0">
+                <h2>About</h2>
+            </div>
+            <div class="container1"><h2><span>I am</span><br>David Matthew Arsenal Borromeo</h2></div>
+            <div class="container2"><img src="/images/mypic.JPG" alt="Photo of David Borromeo"></div>
+            <div class="container3">
+                <h2>Preferred Position</h2>
+                <div class="about-desc">
+                    <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M19 7V17H22V19H19V22H17V19H7V22H5V19H2V17H5V7H2V5H5V2H7V5H17V2H19V5H22V7H19ZM17 7H7V17H17V7Z" />
+                    </svg>
+                    <p> UI/ UX Designer</p>
+                </div>
+                <div class="about-desc">
+                    <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                        <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V14C21 15.1046 20.1046 16 19 16H5C3.89543 16 3 15.1046 3 14V6ZM5 6H19V14H5V6Z"/>
+                        <path stroke-width="0" d="M2 18C1.44772 18 1 18.4477 1 19C1 19.5523 1.44772 20 2 20H22C22.5523 20 23 19.5523 23 19C23 18.4477 22.5523 18 22 18H2Z"/>
+                    </svg>
+                    <p> Front-End Developer</p>
+                </div>
+            </div>   
+            <div class="container4">
+                <h2>Skills</h2>
+                <div class="about-desc">
+                    <svg class="icon2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.25 6.75L22.5 12L17.25 17.25M6.75 17.25L1.5 12L6.75 6.75M14.25 3.75L9.75 20.25"  fill="none" stroke-width="2    " stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <p>HTML and CSS</p>
+                </div>
+                <div class="about-desc">
+                    <svg class="icon2" viewBox="0 0 24 24" stroke-width="0.5" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_47_70)">
+                        <path d="M18.312 8.245C19.534 7.442 20.343 6.058 20.343 4.49C20.343 2.014 18.328 0 15.852 0H8.14801C5.67201 0 3.65701 2.014 3.65701 4.49C3.65701 6.058 4.46601 7.442 5.68801 8.245C4.46601 9.048 3.65701 10.432 3.65701 12C3.65701 13.568 4.46601 14.952 5.68801 15.755C4.46601 16.557 3.65701 17.941 3.65701 19.51C3.65701 21.986 5.68201 24 8.17201 24C10.688 24 12.736 21.964 12.736 19.461V15.32C13.534 16.047 14.594 16.49 15.755 16.49H15.852C18.328 16.49 20.343 14.476 20.343 12C20.343 10.432 19.534 9.048 18.312 8.245ZM12.735 1.471H15.852C17.517 1.471 18.872 2.825 18.872 4.49C18.872 6.155 17.517 7.51 15.852 7.51H12.735V1.471ZM5.12801 4.49C5.12801 2.825 6.48301 1.471 8.14801 1.471H11.265V7.51H8.14801C6.48301 7.51 5.12801 6.155 5.12801 4.49ZM5.12801 12C5.12801 10.335 6.48301 8.981 8.14801 8.981H11.265V15.02H8.12901C6.47301 15.009 5.12801 13.658 5.12801 12ZM11.265 19.461C11.265 21.153 9.87701 22.529 8.17201 22.529C6.49401 22.529 5.12801 21.175 5.12801 19.51C5.12801 17.845 6.48301 16.49 8.14801 16.49H11.265V19.461ZM15.852 15.02H15.755C14.09 15.02 12.736 13.665 12.736 12C12.736 10.335 14.09 8.981 15.755 8.981H15.852C17.517 8.981 18.872 10.335 18.872 12C18.872 13.665 17.517 15.02 15.852 15.02Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_47_70">
+                        <rect width="24" height="24"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    <p>Figma</p>
+                </div>
+                <div class="about-desc">
+                    <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M3 6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V14C21 15.1046 20.1046 16 19 16H5C3.89543 16 3 15.1046 3 14V6ZM5 6H19V14H5V6Z"/>
+                        <path stroke-width="0" d="M2 18C1.44772 18 1 18.4477 1 19C1 19.5523 1.44772 20 2 20H22C22.5523 20 23 19.5523 23 19C23 18.4477 22.5523 18 22 18H2Z"/>
+                    </svg>
+                    <p>Graphic Designing</p>
+                </div>
+            </div>
+            <div class="container5">
+                <p>Click the button below to download my resume</p>
+                <a href="">Download <i></i></a>
+            </div>
+        </section>
+        <section id="project-gallery" class="project-gallery">
+            <div class="project-container">
+              <h2 class="gallery-title">My Projects</h2>
+              <div class="tabs" role="tablist">
+                <button class="tab-button active" role="tab" aria-selected="true" data-tab="tab1">Web Design</button>
+                <button class="tab-button" role="tab" aria-selected="false" data-tab="tab2">UI/UX Design</button>
+                <button class="tab-button" role="tab" aria-selected="false" data-tab="tab3">Graphic Design</button>
+              </div>
+              <div class="tab-content" id="tab1">
+                <div class="gallery-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                      <img src="project1.jpg" alt="Project 1" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Learn2Code</h3>
+                        <p class="project-description">Short description of project 1.</p>
+                        <a href="project1-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                      <img src="project2.jpg" alt="Project 2" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Project Title 2</h3>
+                        <p class="project-description">Short description of project 2.</p>
+                        <a href="project2-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                      <img src="project3.jpg" alt="Project 3" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Project Title 3</h3>
+                        <p class="project-description">Short description of project 3.</p>
+                        <a href="project3-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Add more project items here -->
+                  </div>
+              </div>
+              <div class="tab-content" id="tab2" style="display: none;">
+                <div class="gallery-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                      <img src="project1.jpg" alt="Project 1" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Learn2Code</h3>
+                        <p class="project-description">Short description of project 1.</p>
+                        <a href="project1-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                      <img src="project2.jpg" alt="Project 2" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Project Title 2</h3>
+                        <p class="project-description">Short description of project 2.</p>
+                        <a href="project2-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                      <img src="project3.jpg" alt="Project 3" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Project Title 3</h3>
+                        <p class="project-description">Short description of project 3.</p>
+                        <a href="project3-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Add more project items here -->
+                  </div>
+              </div>
+              <div class="tab-content" id="tab3" style="display: none;">
+                <div class="gallery-grid">
+                    <!-- Project 1 -->
+                    <div class="project-item">
+                      <img src="project1.jpg" alt="Project 1" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Learn2Code</h3>
+                        <p class="project-description">Short description of project 1.</p>
+                        <a href="project1-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-item">
+                      <img src="project2.jpg" alt="Project 2" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Project Title 2</h3>
+                        <p class="project-description">Short description of project 2.</p>
+                        <a href="project2-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-item">
+                      <img src="project3.jpg" alt="Project 3" class="project-image">
+                      <div class="project-info">
+                        <h3 class="project-title">Project Title 3</h3>
+                        <p class="project-description">Short description of project 3.</p>
+                        <a href="project3-details.html" class="project-link">View Details</a>
+                      </div>
+                    </div>
+                    <!-- Add more project items here -->
+                  </div>
+              </div>
+
+              <!--
+              <div class="gallery-grid">
+                <div class="project-item">
+                    <div class="collage">
+                        <div class="collage-item"><img src="/images/mypic.JPG" alt="Image 1"></div>
+                        <div class="collage-item"><img src="/images/mypic.JPG" alt="Image 2"></div>
+                        <div class="collage-item"><img src="/images/mypic.JPG" alt="Image 3"></div>
+                        <div class="collage-item"><img src="/images/mypic.JPG" alt="Image 4"></div>
+                        <div class="collage-item"><img src="/images/mypic.JPG" alt="Image 5"></div>
+                      </div>
+                  <div class="project-info">
+                    <h3 class="project-title">Project Title 1</h3>
+                    <p class="project-description">Short description of project 1.</p>
+                    <a href="project1-details.html" class="project-link">View Details</a>
+                  </div>
+                </div>
+              </div>
+              -->
+            </div>
+          </section>
+
+    </main>
+   
+    <footer>
+        <p>&copy; 2023 David Matthew. All rights reserved.</p>
+    </footer>
+</body>
+
+<script src="/script.js"></script>
+</html>
