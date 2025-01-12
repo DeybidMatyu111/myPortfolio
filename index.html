@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="   style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#project" class="nav-button">
+                    <a href="#project-gallery" class="nav-button">
                         <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 20 20"><title/><g fill-rule="evenodd" id="Icons" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><g id="Group" stroke-width="2" transform="translate(-2.000000, -2.000000)"><g id="Shape"><path d="M4.8,21 C3.80588745,21 3,20.1685288 3,19.1428571 L3,9.85714286 C3,8.83147118 3.80588745,8 4.8,8 L19.2,8 C20.1941125,8 21,8.83147118 21,9.85714286 L21,19.1428571 C21,20.1685288 20.1941125,21 19.2,21 L4.8,21 Z"/><path d="M17,8 L7,8 C7,5.45230769 8.40666667,3 12,3 C15.5933333,3 17,5.45230769 17,8 Z" fill="none"/></g></g></g></svg>
                     </a>
                 </li>
@@ -53,7 +53,60 @@
         <section id="hero">
             <h2>Human Creativity<br> is <span>Irreplaceable</span></h2>
         </section>
-        <section id="about">
+        <section id="about-section">
+          <h2 class="about-title">About</h2>
+          <div class="about-grid">
+            <div class="description">
+                <h2 class="name">David Matthew Arsenal Borromeo</h2>
+                <div class="role-skill">
+                    <div class="roles">
+                      <h2>Preferred Role</h2>
+                      <div class="role">
+                        <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M19 7V17H22V19H19V22H17V19H7V22H5V19H2V17H5V7H2V5H5V2H7V5H17V2H19V5H22V7H19ZM17 7H7V17H17V7Z" />
+                          </svg>
+                          <p>UI/UX Designer</p>
+                      </div>
+                      <div class="role">
+                        <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M19 7V17H22V19H19V22H17V19H7V22H5V19H2V17H5V7H2V5H5V2H7V5H17V2H19V5H22V7H19ZM17 7H7V17H17V7Z" />
+                          </svg>
+                          <p>Web Designer</p>
+                      </div>
+
+                    </div>
+                    <div class="skills">
+                      <h2>Skills</h2>
+                      <div class="skill">
+                        <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M19 7V17H22V19H19V22H17V19H7V22H5V19H2V17H5V7H2V5H5V2H7V5H17V2H19V5H22V7H19ZM17 7H7V17H17V7Z" />
+                          </svg>
+                          <p>UI/UX Designer</p>
+                      </div>
+                      <div class="skill">
+                        <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path stroke-width="0" fill-rule="evenodd" clip-rule="evenodd" d="M19 7V17H22V19H19V22H17V19H7V22H5V19H2V17H5V7H2V5H5V2H7V5H17V2H19V5H22V7H19ZM17 7H7V17H17V7Z" />
+                          </svg>
+                          <p>Web Designer</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="download">
+                  <p>Click the button below to download my resume</p>
+                  <button class="download-button" onclick="downloadPDF()">
+                    Download PDF <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4706 9.05882H15.7647V2H8.70588V9.05882H4L12.2353 17.2941L20.4706 9.05882ZM4 19.6471V22H20.4706V19.6471H4Z" fill="black"/>
+                      </svg>
+                  </button>
+                </div>
+            </div>
+            <div class="myPicture">
+              <img src="images/mypic.JPG" alt="David Borromeo">
+            </div>
+          </div>
+
+
+          <!--
             <div class="container0">
                 <h2>About</h2>
             </div>
@@ -106,12 +159,18 @@
             </div>
             <div class="container5">
                 <p>Click the button below to download my resume</p>
-                <a href="">Download <i></i></a>
+                <button class="download-button" onclick="downloadPDF()">
+                  Download PDF <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4706 9.05882H15.7647V2H8.70588V9.05882H4L12.2353 17.2941L20.4706 9.05882ZM4 19.6471V22H20.4706V19.6471H4Z" fill="black"/>
+                    </svg>
+                </button>
+
             </div>
+            -->
         </section>
         <section id="project-gallery" class="project-gallery">
             <div class="project-container">
-              <h2 class="gallery-title">My Projects</h2>
+              <h2 class="project-title">My Projects</h2>
               <div class="tabs" role="tablist">
                 <button class="tab-button active" role="tab" aria-selected="true" data-tab="tab1">Web Design</button>
                 <button class="tab-button" role="tab" aria-selected="false" data-tab="tab2">UI/UX Design</button>
@@ -121,25 +180,25 @@
                 <div class="gallery-grid">
                     <!-- Project 1 -->
                     <div class="project-item">
-                      <img src="project1.jpg" alt="Project 1" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 1" class="project-image">
                       <div class="project-info">
-                        <h3 class="project-title">Learn2Code</h3>
-                        <p class="project-description">Short description of project 1.</p>
+                        <h3 class="project-title">Magazine Cover</h3>
+                        <p class="project-description">Short description of project 1.</p>  
                         <a href="project1-details.html" class="project-link">View Details</a>
                       </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="project-item">
-                      <img src="project2.jpg" alt="Project 2" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 2" class="project-image">
                       <div class="project-info">
                         <h3 class="project-title">Project Title 2</h3>
                         <p class="project-description">Short description of project 2.</p>
-                        <a href="project2-details.html" class="project-link">View Details</a>
+                        <a href="project2-details.html" class="project-link">View Details >>></a>
                       </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="project-item">
-                      <img src="project3.jpg" alt="Project 3" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 3" class="project-image">
                       <div class="project-info">
                         <h3 class="project-title">Project Title 3</h3>
                         <p class="project-description">Short description of project 3.</p>
@@ -153,25 +212,25 @@
                 <div class="gallery-grid">
                     <!-- Project 1 -->
                     <div class="project-item">
-                      <img src="project1.jpg" alt="Project 1" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 1" class="project-image">
                       <div class="project-info">
-                        <h3 class="project-title">Learn2Code</h3>
-                        <p class="project-description">Short description of project 1.</p>
+                        <h3 class="project-title">Magazine Cover</h3>
+                        <p class="project-description">Short description of project 1.</p>  
                         <a href="project1-details.html" class="project-link">View Details</a>
                       </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="project-item">
-                      <img src="project2.jpg" alt="Project 2" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 2" class="project-image">
                       <div class="project-info">
                         <h3 class="project-title">Project Title 2</h3>
                         <p class="project-description">Short description of project 2.</p>
-                        <a href="project2-details.html" class="project-link">View Details</a>
+                        <a href="project2-details.html" class="project-link">View Details >>></a>
                       </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="project-item">
-                      <img src="project3.jpg" alt="Project 3" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 3" class="project-image">
                       <div class="project-info">
                         <h3 class="project-title">Project Title 3</h3>
                         <p class="project-description">Short description of project 3.</p>
@@ -185,25 +244,25 @@
                 <div class="gallery-grid">
                     <!-- Project 1 -->
                     <div class="project-item">
-                      <img src="project1.jpg" alt="Project 1" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 1" class="project-image">
                       <div class="project-info">
-                        <h3 class="project-title">Learn2Code</h3>
-                        <p class="project-description">Short description of project 1.</p>
+                        <h3 class="project-title">Magazine Cover</h3>
+                        <p class="project-description">Short description of project 1.</p>  
                         <a href="project1-details.html" class="project-link">View Details</a>
                       </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="project-item">
-                      <img src="project2.jpg" alt="Project 2" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 2" class="project-image">
                       <div class="project-info">
                         <h3 class="project-title">Project Title 2</h3>
                         <p class="project-description">Short description of project 2.</p>
-                        <a href="project2-details.html" class="project-link">View Details</a>
+                        <a href="project2-details.html" class="project-link">View Details >>></a>
                       </div>
                     </div>
                     <!-- Project 3 -->
                     <div class="project-item">
-                      <img src="project3.jpg" alt="Project 3" class="project-image">
+                      <img src="images/Newspaper.svg" alt="Project 3" class="project-image">
                       <div class="project-info">
                         <h3 class="project-title">Project Title 3</h3>
                         <p class="project-description">Short description of project 3.</p>
