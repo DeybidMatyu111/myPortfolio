@@ -5,13 +5,13 @@ const sidebar = document.getElementById('sidebar');
 // Toggle Sidebar and Icons
 menuButton.addEventListener('click', () => {
   // Toggle sidebar visibility
-  sidebar.style.left = sidebar.style.left === '0%' ? '-100%' : '0%';
+  sidebar.style.right = sidebar.style.right === '0%' ? '-100%' : '0%';
 
   // Toggle the open class on the button
   menuButton.classList.toggle('open');
 
   // Prevent scrolling on body when sidebar is active
-  document.body.classList.toggle('no-scroll', sidebar.style.left === '0%');
+  document.body.classList.toggle('no-scroll', sidebar.style.right === '0%');
 
   // Prevent header from hiding when sidebar is active
   if (sidebar.style.left === '0%') {
@@ -25,7 +25,7 @@ const navButtons = document.querySelectorAll('.nav-button');
 navButtons.forEach(button => {
   button.addEventListener('click', () => {
     // Hide the sidebar after navigation
-    sidebar.style.left = '-100%';
+    sidebar.style.right = '-100%';
 
     // Remove the open class from the menu button
     menuButton.classList.remove('open');
@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   // Only hide the header if the sidebar is not active
-  if (sidebar.style.left !== '0%') {
+  if (sidebar.style.right !== '0%') {
     if (scrollTop > lastScrollTop) {
       // Scrolling down - hide the header
       header.classList.add('header-hidden');
