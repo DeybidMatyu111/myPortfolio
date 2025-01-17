@@ -341,13 +341,14 @@ nav ul li a:hover {
   }
   
   .project-item {
-    align-content: flex-start;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: var(--bg2-color);
     cursor: pointer;
+  }
 
+  .project-item a {
+    text-decoration: none;
   }
 
   .project-image {
@@ -495,6 +496,12 @@ nav ul li a:hover {
 
 #contact-form button:hover {
   background-color: #0056b3;
+}
+
+#responseMessage {
+
+  font-family: var(--primary-font);
+  font-size: var(--small-text);
 }
 
 .contact-details {
