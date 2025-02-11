@@ -16,15 +16,6 @@ window.onload = function () {
   }
 };
 
-// Reload the page while staying on the same page
-document.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default navigation
-      sessionStorage.setItem("reloadPage", window.location.href); // Store current page
-      location.reload(); // Reload the page
-  });
-});
-
 // Check if reloadPage exists and reload at the same page
 if (sessionStorage.getItem("reloadPage")) {
   sessionStorage.removeItem("reloadPage"); // Clear storage to prevent loop
