@@ -152,7 +152,6 @@ nav ul li {
     top: 50%;
     bottom: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
 }
 
 .hero-text h1 {
@@ -304,8 +303,8 @@ section {
 }
 
 .picture {
+  background-image: url(images/mypic.JPG);
   grid-area: picture;
-  background-image: url(/images/mypic.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
