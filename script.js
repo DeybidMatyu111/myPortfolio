@@ -1,39 +1,36 @@
-// Get elements
-const menuButton = document.getElementById('menu-button');
-const sidebar = document.getElementById('sidebar');
+//Reload current Page
+window.onload = function () {
+  // Force scroll to the top on reload
+  window.scrollTo(0, 0);
 
-// Toggle Sidebar and Icons
-menuButton.addEventListener('click', () => {
-  // Toggle sidebar visibility
-  sidebar.style.right = sidebar.style.right === '0%' ? '-100%' : '0%';
-
-  // Toggle the open class on the button
-  menuButton.classList.toggle('open');
-
-  // Prevent scrolling on body when sidebar is active
-  document.body.classList.toggle('no-scroll', sidebar.style.right === '0%');
-
-  // Prevent header from hiding when sidebar is active
-  if (sidebar.style.left === '0%') {
-    header.classList.remove('header-hidden');
+  // Run text animation
+  const text = document.getElementById("animated-text");
+  if (text) {
+      text.style.opacity = "0";
+      text.style.transform = "translateX(20px)";
+      setTimeout(() => {
+          text.style.transition = "opacity 1s ease, transform 1s ease";
+          text.style.opacity = "1";
+          text.style.transform = "translateX(0)";
+      }, 100);
   }
-});
+};
 
-// Handle sidebar navigation links
-const navButtons = document.querySelectorAll('.nav-button');
-
-navButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Hide the sidebar after navigation
-    sidebar.style.right = '-100%';
-
-    // Remove the open class from the menu button
-    menuButton.classList.remove('open');
-
-    // Re-enable scrolling on the body
-    document.body.classList.remove('no-scroll');
+// Reload the page while staying on the same page
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default navigation
+      sessionStorage.setItem("reloadPage", window.location.href); // Store current page
+      location.reload(); // Reload the page
   });
 });
+
+// Check if reloadPage exists and reload at the same page
+if (sessionStorage.getItem("reloadPage")) {
+  sessionStorage.removeItem("reloadPage"); // Clear storage to prevent loop
+  window.scrollTo(0, 0); // Ensure it starts at the top
+}
+
 
 // Tab navigation functionality
 const tabButtons = document.querySelectorAll('.tab-button');
@@ -63,7 +60,7 @@ window.addEventListener('scroll', () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   // Only hide the header if the sidebar is not active
-  if (sidebar.style.right !== '0%') {
+  if (navbar.style.right !== '0%') {
     if (scrollTop > lastScrollTop) {
       // Scrolling down - hide the header
       header.classList.add('header-hidden');
@@ -82,5 +79,30 @@ function downloadPDF() {
   link.href = 'David-Borromeo-Resume.pdf';
   link.download = 'David-Borromeo-Resume.pdf';
   link.click();
+}
+
+
+function hideOthers(selectedIcon) {
+  document.querySelectorAll('.skills-icons').forEach(icon => {
+      if (icon !== selectedIcon) {
+          icon.style.opacity = "50%";
+          icon.style.transform = "scale(0.8)";
+          // Hide the label of the unselected icon
+          icon.querySelector('.icon-label').style.display = "none";
+      } else {
+          // Show the label of the selected icon
+          icon.querySelector('.icon-label').style.display = "block";
+          icon.querySelector('.icon-label').style.transition = "opacity 1s ease, transform 1s ease";
+      }
+  });
+}
+
+function showAll() {
+    document.querySelectorAll('.skills-icons').forEach(icon => {
+        icon.style.opacity = "1";
+        icon.style.transform = "scale(1.1)";
+        // Show all labels
+        icon.querySelector('.icon-label').style.display = "none";
+    });
 }
 
